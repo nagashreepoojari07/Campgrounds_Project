@@ -25,11 +25,10 @@ var	campgroundRouter = require("./routes/campgroundrouter"),
 //   useNewUrlParser: true,
 //   useUnifiedTopology: true
 // })
-mongoose.connect('mongodb+srv://nagashree:iamnagashree@cluster0.68qd8.mongodb.net/<dbname>?retryWrites=true&w=majority', {
+mongoose.connect('mongodb+srv://nagashree:imnagashree@cluster0.68qd8.mongodb.net/<dbname>?retryWrites=true&w=majority', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 })
-
 
 seedDB();
 
