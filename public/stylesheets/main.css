@@ -1,0 +1,15 @@
+.thumbnail img {
+	width:100%;
+}
+
+.thumnail{
+	padding:0;
+}
+
+.thumnail caption-full {
+	padding:9px;
+}
+
+.deleteform{
+	display:inline;
+}
