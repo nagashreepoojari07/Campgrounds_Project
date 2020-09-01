@@ -61,6 +61,4 @@ app.get("*",function(req,res){
 	res.send("sorry!!page not found")
 })
 
-app.listen(4000,function(){
-	console.log("server has started")
-})
+app.listen(process.env.PORT,process.env.IP)
