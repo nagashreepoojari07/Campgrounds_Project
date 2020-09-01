@@ -18,7 +18,7 @@ var	campgroundRouter = require("./routes/campgroundrouter"),
 	commentRouter = require("./routes/commentrouter"),
 	authRouter = require("./routes/authrouter");
 
-	console.log(process.env.DATABASEURL)
+	// console.log(process.env.DATABASEURL)
 // mongoose.connect('mongodb://localhost:27017/yelp_camp', {
 //   useNewUrlParser: true,
 //   useUnifiedTopology: true
@@ -28,8 +28,10 @@ var	campgroundRouter = require("./routes/campgroundrouter"),
 //   useNewUrlParser: true,
 //   useUnifiedTopology: true
 // })
-
-mongoose.connect(process.env.DATABASEURL, {
+var url = process.env.DATABASEURL
+// || 'mongodb://localhost:27017/yelp_camp' 
+console.log(url)
+mongoose.connect(url, {
   useNewUrlParser: true,
   useUnifiedTopology: true
 })
@@ -71,4 +73,6 @@ app.get("*",function(req,res){
 	res.send("sorry!!page not found")
 })
 
-app.listen(process.env.PORT,process.env.IP)
+// app.listen(process.env.PORT,process.env.IP)
+// app.listen(4000)
+app.listen(process.env.PORT)
