@@ -18,11 +18,14 @@ var	campgroundRouter = require("./routes/campgroundrouter"),
 	commentRouter = require("./routes/commentrouter"),
 	authRouter = require("./routes/authrouter");
 
-mongoose.connect('mongodb://localhost:27017/yelp_camp', {
+// mongoose.connect('mongodb://localhost:27017/yelp_camp', {
+//   useNewUrlParser: true,
+//   useUnifiedTopology: true
+// })
+mongoose.connect('mongodb+srv://nagashree:imnagashree@cluster0.68qd8.mongodb.net/<dbname>?retryWrites=true&w=majority', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 })
-
 
 seedDB();
 
