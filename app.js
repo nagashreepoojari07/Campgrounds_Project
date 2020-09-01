@@ -19,16 +19,16 @@ var	campgroundRouter = require("./routes/campgroundrouter"),
 	authRouter = require("./routes/authrouter");
 
 
-// var url = process.env.DATABASE_URL || 'mongodb://localhost:27017/yelp_camp' 
-// console.log(url)
-// mongoose.connect(url, {
-//   useNewUrlParser: true,
-//   useUnifiedTopology: true
-// })
-mongoose.connect('mongodb+srv://nagashree:imnagashree@cluster0.68qd8.mongodb.net/<dbname>?retryWrites=true&w=majority', {
+var url = process.env.DATABASE_URL || 'mongodb://localhost:27017/yelp_camp' 
+console.log(url)
+mongoose.connect(url, {
   useNewUrlParser: true,
   useUnifiedTopology: true
 })
+// mongoose.connect('mongodb+srv://nagashree:imnagashree@cluster0.68qd8.mongodb.net/<dbname>?retryWrites=true&w=majority', {
+//   useNewUrlParser: true,
+//   useUnifiedTopology: true
+// })
 
 seedDB();
 
