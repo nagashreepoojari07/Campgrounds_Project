@@ -67,4 +67,4 @@ app.get("*",function(req,res){
 	res.send("sorry!!page not found")
 })
 
-app.listen(process.env.PORT || 4000,process.env.IP)
+app.listen(process.env.PORT || 3000,process.env.IP)
